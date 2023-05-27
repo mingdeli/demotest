@@ -1,0 +1,23 @@
+server:
+  port: 8082
+change-log-plugin:
+  enable: true  # 描述：是否启动；必填：否；默认：true
+  mapper-name-space: com.netease.cloud.collaboration.components.associate.mapper  # 描述：mapper的包名路径；必填：是
+  get-operator-id-method: com.netease.cloud.collaboration.components.associate.config.CurrentUser#getUserId # 描述：获取当前操作人id的方法，使用[包名]#[方法名]格式，为空则operator_id=-1；必填：否；
+  default-persistence:  # 默认持久化，如果不配置，则需要自己通过监听PersistenceEvent实现自定义持久化
+    async: true # 描述：是否异步，如果是，则会使用AsyncConfig的线程池规则进行管理；必填：是；
+  logic-deleted-field: # 逻辑删除配置，必填：否
+    enabled: true # 必填：否；默认：true
+    field: deleted # 描述：逻辑删除字段，必填：否；默认：deleted
+    not-deleted-value: 0 # 描述：非删除值，不等于not-deleted-value则认为是数据已删除；必填：否；默认：0
+  interceptor-tables: # 表拦截规则
+    - table: role  # 描述：表名；必填：是
+      strategy: WHILE_LIST # 描述：字段策略，配合fields使用；必填：否；默认：ALL；选项：ALL/WHILE_LIST/BLACK_LIST
+      fields: name,tag #  描述：过滤字段，配合strategy使用，strategy=ALL时，fields忽略使用所有字段；必填：否
+      mapperNameSpace: com.netease.cloud.collaboration.components.xxx.mapper  # 描述：对应的mapper命名空间；必填：否；默认：继承上层mapper-name-space
+      mapperName: com.netease.cloud.collaboration.components.xxx.mapper.role # 描述：mapper名称；必填：否；默认：[表名]Mapper
+      mapperMethods: create,insert # 描述: 拦截的方法名称；必填：否；默认：["insert", "updateById", "update", "delete", "deleteBatchIds", "deleteByMap"]，提供默认mybatis-plus的默认拦截方式，如果是自己实现的mybatis的mapper，需要提供覆盖实现
+    - table: user
+      strategy: WHILE_LIST
+      fields: mail,name
+    - table: user_reference
