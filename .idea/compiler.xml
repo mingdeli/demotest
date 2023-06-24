@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="teststarter" />
+        <module name="testplugin" />
         <module name="demoes" />
         <module name="ordering" />
       </profile>
@@ -15,13 +15,13 @@
     <bytecodeTargetLevel target="8">
       <module name="demoes" target="1.8" />
       <module name="ordering" target="1.8" />
-      <module name="teststarter" target="1.8" />
+      <module name="testplugin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demoes" options="-parameters" />
-      <module name="teststarter" options="-parameters" />
+      <module name="testplugin" options="-parameters" />
     </option>
   </component>
 </project>
