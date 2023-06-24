@@ -1,8 +1,8 @@
-package com.ldm.teststarter.controller;
+package com.ldm.testplugin.controller;
 
 import com.ldm.hello.service.Helloservice;
-import com.ldm.teststarter.config.CarProperties;
-import com.ldm.teststarter.po.MyUser;
+import com.ldm.testplugin.config.CarProperties;
+import com.ldm.testplugin.po.MyUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.ldm.teststarter;
+package com.ldm.testplugin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

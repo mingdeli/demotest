@@ -1,9 +1,8 @@
-package com.ldm.teststarter.config;
+package com.ldm.testplugin.config;
 
 import com.ldm.hello.service.Helloservice;
-import com.ldm.teststarter.po.MyUser;
-import com.ldm.teststarter.po.Pet;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import com.ldm.testplugin.po.MyUser;
+import com.ldm.testplugin.po.Pet;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

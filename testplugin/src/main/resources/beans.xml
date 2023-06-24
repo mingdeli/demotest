@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="user01" class="com.ldm.teststarter.po.MyUser">
+    <bean name="user01" class="com.ldm.testplugin.po.MyUser">
         <property name="age" value="19"></property>
         <property name="username" value="ldm"></property>
         <property name="addr" value="广州市"></property>

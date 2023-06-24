@@ -1,6 +1,6 @@
-package com.ldm.teststarter;
+package com.ldm.testplugin;
 
-import com.kangaroohy.oss.service.OssTemplate;
+import com.ldm.hello.service.OwsTemplate;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class OssTest {
     @Autowired
-    private OssTemplate ossTemplate;
+    private OwsTemplate ossTemplate;
 
     @Test
     void contextLoads() {

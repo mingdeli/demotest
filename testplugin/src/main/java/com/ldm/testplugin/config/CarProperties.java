@@ -1,6 +1,5 @@
-package com.ldm.teststarter.config;
+package com.ldm.testplugin.config;
 
-import com.ldm.teststarter.po.Pet;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

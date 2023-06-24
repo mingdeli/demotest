@@ -51,13 +51,8 @@
         <!-- 引入自定义start-->
         <dependency>
             <groupId>com.ldm</groupId>
-            <artifactId>ldm-hello-spring-boot-starter</artifactId>
+            <artifactId>oss-s3-starter</artifactId>
             <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.kangaroohy</groupId>
-            <artifactId>oss-spring-boot-starter</artifactId>
-            <version>3.0.0</version>
         </dependency>
 
        <!-- <dependency>
@@ -65,11 +60,12 @@
             <artifactId>mybatis-changelog-plugin</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>-->
-        <dependency>
-            <groupId>com.netease.ncc.gametool</groupId>
-            <artifactId>changelog-core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.netease.ncc.gametool</groupId>-->
+<!--            <artifactId>changelog-core</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <!-- mybatisplus 依赖-->
 <!--        <dependency>-->

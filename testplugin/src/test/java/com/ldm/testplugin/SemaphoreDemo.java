@@ -1,4 +1,4 @@
-package com.ldm.teststarter;
+package com.ldm.testplugin;
 
 import java.util.concurrent.Semaphore;
 
