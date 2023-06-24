@@ -1,9 +1,6 @@
 package com.ldm.testplugin.controller;
 
-import com.amazonaws.services.s3.model.S3Object;
-import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.ldm.hello.service.OwsTemplate;
-/* import com.netease.ncc.unus.changelog.core.annotation.MarkChangeLog; */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

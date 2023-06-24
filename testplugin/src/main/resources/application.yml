@@ -1,5 +1,24 @@
 server:
   port: 8082
+#数据库名：mysql，用户名root，密码123456
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.202.133:3306/dev?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# mybatis-plus配置
+mybatis-plus:
+  # xml文件位置
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
 #change-log-plugin:
 #  enable: true  # 描述：是否启动；必填：否；默认：true
 #  mapper-name-space: com.netease.cloud.collaboration.components.associate.mapper  # 描述：mapper的包名路径；必填：是
