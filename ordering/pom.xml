@@ -81,7 +81,7 @@
         <!--
             Java source/target to use for compilation.
           -->
-        <javac.target>1.8</javac.target>
+        <javac.target>17</javac.target>
 
         <!--
             Name of the test Uber-JAR to generate.

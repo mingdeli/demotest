@@ -16,7 +16,7 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>8</java.version>
+        <java.version>17</java.version>
         <!--es可能需要jdk11，需要覆盖默认的ES版本配置，与本地引入的ES版本保持一致-->
         <elasticsearch.version>7.6.2</elasticsearch.version>
     </properties>

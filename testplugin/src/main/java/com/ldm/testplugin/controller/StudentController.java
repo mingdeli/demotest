@@ -33,8 +33,8 @@ public class StudentController {
         return R.ok(list);
     }
 
-    @GetMapping("/list")
-    public R testRedis(@RequestParam("i") int i) throws Exception {
+    @GetMapping("/add")
+    public R add(@RequestParam("i") int i) throws Exception {
         List<Student> list = studentService.add(i);
         return R.ok(list);
     }
